@@ -2,7 +2,7 @@
 {
   "name": "response-error",
   "version": "1.0.0",
-  "description": "",
+  "description": "Catch errors and send appropriate status code through HTTP response",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
@@ -24,4 +24,3 @@
     "tape": "*"
   }
 }
-  

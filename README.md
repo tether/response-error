@@ -4,6 +4,7 @@
 [![Downloads](https://img.shields.io/npm/dm/response-error.svg)](http://npm-stat.com/charts.html?package=response-error)
 [![guidelines](https://tether.github.io/contribution-guide/badge-guidelines.svg)](https://github.com/tether/contribution-guide)
 
+Catch errors and send appropriate status code through HTTP response. This module automatically knows which status code and message to send according the error passed.
 
 
 ## Usage
@@ -21,6 +22,8 @@ http.createServer((request, response) => {
   }
 })
 ```
+
+This module accept all native errors (ReferenceError, TypeError, etc) as well as [HttpError](https://github.com/jshttp/http-errors).
 
 ## Installation
 
