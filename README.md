@@ -23,7 +23,12 @@ http.createServer((request, response) => {
 })
 ```
 
-This module accept all native errors (ReferenceError, TypeError, etc) as well as [HttpError](https://github.com/jshttp/http-errors).
+This module accept all native errors (ReferenceError, TypeError, etc) as well as [HttpError](https://github.com/jshttp/http-errors). You also can
+pass a status code directly as following:
+
+```js
+send(response, 404)
+```
 
 ## Installation
 
