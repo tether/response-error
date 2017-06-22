@@ -14,9 +14,11 @@ const status = require('response-status')
  */
 
 module.exports = function (response, error) {
-  let code = error.statusCode
-  const name = error.name
+  let code = typeof error === 'number'
+    ? error
+    : error.statusCode
   if (!code) {
+    const name = error.name
     if (name === 'ReferenceError') code = 400
     if (name === 'TypeError') code = 400
   }
