@@ -1,6 +1,6 @@
 {
   "name": "response-error",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Catch errors and send appropriate status code through HTTP response",
   "main": "index.js",
   "scripts": {
